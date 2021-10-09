@@ -1,17 +1,17 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class PainelDeTexto extends JEditorPane {
+public class PainelDeTexto extends JPanel {
 
     private JTextField numeroTXT;
 
     public PainelDeTexto(){
         setLayout(new FlowLayout());
 
-        numeroTXT = new JTextField();
+        numeroTXT = new JTextField(15);
         numeroTXT.setHorizontalAlignment(JTextField.RIGHT);
-        numeroTXT.setEditable(false);
         numeroTXT.setEnabled(false);
+        add(numeroTXT);
     }
 
     public JTextField getNumeroTXT() {
