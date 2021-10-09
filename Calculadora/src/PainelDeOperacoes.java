@@ -29,7 +29,7 @@ public class PainelDeOperacoes extends JPanel implements ActionListener {
         add(botaoSomar);
 
         botaoSubtrair = new JButton("-");
-        botaoSomar.addActionListener(this);
+        botaoSubtrair.addActionListener(this);
         add(botaoSubtrair);
 
         botaoMultiplicar = new JButton("*");
