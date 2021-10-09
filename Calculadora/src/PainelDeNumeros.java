@@ -26,6 +26,7 @@ public class PainelDeNumeros extends JPanel implements ActionListener {
 
         JButton bot4 = new JButton("4");
         bot4.addActionListener(this);
+        
         add(bot4);
 
         JButton bot5 = new JButton("5");
