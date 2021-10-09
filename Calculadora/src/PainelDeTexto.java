@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class PainelDeTexto extends JPanel {
+public class PainelDeTexto extends JEditorPane {
 
     private JTextField numeroTXT;
 
@@ -10,6 +10,7 @@ public class PainelDeTexto extends JPanel {
 
         numeroTXT = new JTextField();
         numeroTXT.setHorizontalAlignment(JTextField.RIGHT);
+        numeroTXT.setEditable(false);
         numeroTXT.setEnabled(false);
     }
 

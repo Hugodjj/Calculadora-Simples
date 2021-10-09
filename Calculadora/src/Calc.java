@@ -13,11 +13,15 @@ public class Calc extends JFrame {
 
         setLayout(new BorderLayout());
 
-        JTextPane painelTexto = new JTextPane();
+        PainelDeTexto painelTexto = new PainelDeTexto();
         add(BorderLayout.NORTH,painelTexto);
 
         JPanel painelDeDigitos = new JPanel();
         painelDeDigitos.setLayout(new BorderLayout());
+        painelDeDigitos.add(BorderLayout.CENTER,new PainelDeNumeros(painelTexto.getNumeroTXT()));
+        painelDeDigitos.add(BorderLayout.EAST,new PainelDeOperacoes(painelTexto.getNumeroTXT()));
+
+
 
         add(BorderLayout.CENTER,painelDeDigitos);
 
